@@ -1,0 +1,127 @@
+body{
+    background-color: #202C36;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  header {
+    padding: 20px;
+    background-color: #202C36;
+    color: white;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #2B3844;
+  }
+  
+  .menu {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .text1 {
+    cursor: pointer;
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 50px);
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+    background-color: #2B3844;
+    text-align: center;
+  }
+  
+  .Search {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    position: relative;
+    left: -370px;
+  }
+  
+  .main_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .block1, .block2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .box {
+    width: calc(25% - 20px);
+    background-color: #2B3844;
+    border: 1px solid #ddd;
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+  }
+  
+  .box img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .box p {
+    margin: 0;
+    font-size: 1rem;
+    color: white;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .box {
+      width: calc(50% - 20px);
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    input[type="text"] {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  
+  /* Phone uchun media query */
+  @media (max-width: 480px) {
+    .box {
+      width: 100%;
+    }
+  
+    .menu {
+      font-size: 1.2rem;
+    }
+  
+    .text1 {
+      font-size: 1rem;
+    }
+  
+    input[type="text"] {
+      width: calc(100% - 40px);
+    }
+  }
